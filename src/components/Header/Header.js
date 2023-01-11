@@ -1,5 +1,5 @@
 import logo from '../../assets/icon/logo.svg';
-
+import burgerMenu from '../../assets/icon/icon-hamburger.svg';
 const Header = () => {
     const backgroundNavbar = {
         backgroundColor: "rgba(122,122,122, 0.1)",
@@ -11,10 +11,13 @@ const Header = () => {
     return (
         <header className="">
             <div className='h-full md:h-32 flex flex-row items-center relative justify-between  md:pb-9 xl:pb-0 xl:pt-9 '>
-                <div className='w-2/5 flex flex-col items-center justify-center ml-10'>
+                <div className='md:w-2/5 flex flex-col items-center justify-center ml-5 md:ml-10'>
                     <div className="w-full">
-                        <img src={logo} alt="" />
+                        <img src={logo} className='h-10 md:h-auto' alt="" />
                     </div>
+                </div>
+                <div className='mr-5 md:hidden'>
+                    <img src={burgerMenu} alt="" />
                 </div>
                 <nav className='hidden sm:flex justify-center items-center h-full w-3/5' style={backgroundNavbar}>
                     <ul className='w-10/12 h-full flex flex-row justify-center items-center z-10'>

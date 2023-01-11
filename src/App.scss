@@ -70,11 +70,18 @@ body {
 
             .custom-width {
                 width: 55%;
+            }
 
-                // @media (max-width: 413px) {
-                //     width: 80%;
-                // }
+            .custom-height-title {
+                @media (max-width: 413px) {
+                    height: 10%;
+                }
+            }
 
+            .custom-height-content {
+                @media (max-width: 413px) {
+                    height: 90%;
+                }
             }
 
 
