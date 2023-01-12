@@ -12,8 +12,8 @@ function App() {
       <Header />
       {/* <Homepage /> */}
       {/* <Destination /> */}
-      {/* <Crew /> */}
-      <Technology />
+      <Crew />
+      {/* <Technology /> */}
     </div>
   );
 }

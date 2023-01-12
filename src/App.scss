@@ -81,14 +81,36 @@ body {
                 width: 55%;
             }
 
-            .custom-height-title {
+            .custom-height-10 {
                 @media (max-width: 413px) {
                     height: 10%;
                 }
             }
 
-            .custom-height-content {
+            .custom-height-90 {
                 @media (max-width: 413px) {
+                    height: 90%;
+                }
+
+                @media (min-width: 414px) {
+                    height: 60%;
+                }
+
+                @media (min-width: 1280px) {
+                    height: 50%;
+                }
+            }
+
+            .custom-height-title {
+
+                // 413px origin value
+                @media (max-width: 767px) {
+                    height: 10%;
+                }
+            }
+
+            .custom-height-content {
+                @media (max-width: 767px) {
                     height: 90%;
                 }
             }
