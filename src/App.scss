@@ -13,6 +13,13 @@ body {
 
         header {
             height: 13.7vh;
+
+            .custom-w-h-close-burgerMenu {
+                @media (max-width: 767px) {
+                    height: 10vh;
+                    width: 90%;
+                }
+            }
         }
 
         main {
@@ -68,6 +75,8 @@ body {
                 }
             }
 
+
+
             .custom-width {
                 width: 55%;
             }
@@ -83,9 +92,6 @@ body {
                     height: 90%;
                 }
             }
-
-
-
         }
     }
 }
