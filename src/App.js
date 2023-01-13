@@ -1,5 +1,5 @@
 import Header from './components/Header/Header';
-// import Homepage from "./views/Homepage/Homepage";
+import Homepage from "./views/Homepage/Homepage";
 import Destination from "./views/Destination/Destination";
 import Crew from "./views/Crew/Crew";
 import Technology from "./views/Technology/Technology";
@@ -11,8 +11,8 @@ function App() {
     <div className="App w-full h-full">
       <Header />
       {/* <Homepage /> */}
-      {/* <Destination /> */}
-      <Crew />
+      <Destination />
+      {/* <Crew /> */}
       {/* <Technology /> */}
     </div>
   );

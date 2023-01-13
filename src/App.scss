@@ -87,6 +87,24 @@ body {
                 }
             }
 
+            .custom-height-10-d {
+                @media (max-width: 1279px) {
+                    height: 10%;
+                }
+            }
+
+            .custom-height-90-d {
+                @media (max-width: 1279px) {
+                    height: 90%;
+                }
+            }
+
+            .custom-height-90-xl {
+                @media (min-width: 1280px) {
+                    height: 90%;
+                }
+            }
+
             .custom-height-90 {
                 @media (max-width: 413px) {
                     height: 90%;
@@ -99,6 +117,10 @@ body {
                 @media (min-width: 1280px) {
                     height: 50%;
                 }
+            }
+
+            .custom-height-90 {
+                // @media ()
             }
 
             .custom-height-title {
