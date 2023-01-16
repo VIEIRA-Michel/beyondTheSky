@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Homepage = () => {
     return (
         <main className="min-h-full flex flex-col xl:flex-row items-center">
@@ -10,7 +12,7 @@ const Homepage = () => {
             </div>
             <div className='w-full xl:w-2/4 h-2/5 xl:h-auto flex flex-col justify-start xl:justify-center items-center'>
                 <button className="bg-white max-[413px]:w-2/5 max-[413px]:h-3/5 w-44 h-44 rounded-full">
-                    <span className="max-[413px]:text-xl text-2xl space">EXPLORE</span>
+                    <Link to={'/destination'}><span className="max-[413px]:text-xl text-2xl space">EXPLORE</span></Link>
                 </button>
             </div>
         </main>

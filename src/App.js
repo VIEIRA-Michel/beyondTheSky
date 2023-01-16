@@ -1,19 +1,13 @@
-import Header from './components/Header/Header';
-import Homepage from "./views/Homepage/Homepage";
-import Destination from "./views/Destination/Destination";
-import Crew from "./views/Crew/Crew";
-import Technology from "./views/Technology/Technology";
-
 import './App.scss';
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header/Header';
+
 
 function App() {
   return (
     <div className="App w-full h-full">
       <Header />
-      <Homepage />
-      {/* <Destination /> */}
-      {/* <Crew /> */}
-      {/* <Technology /> */}
+      <Outlet />
     </div>
   );
 }

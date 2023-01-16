@@ -2,6 +2,8 @@ import logo from '../../assets/icon/logo.svg';
 import burgerMenu from '../../assets/icon/icon-hamburger.svg';
 import closeMenu from '../../assets/icon/icon-close.svg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,10 +29,10 @@ const Header = () => {
                         <img onClick={() => setToggleMenu(false)} className="cursor-pointer max-[767px]:h-fit" src={closeMenu} alt="" />
                     </div>
                     <ul className='w-10/12 max-[767px]:w-full h-full max-[767px]:h-2/5 flex flex-row max-[767px]:flex-col justify-center items-center z-10'>
-                        <li className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><a href="#home" className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>00</span><span className='font-thin tracking-widest'>HOME</span></a></li>
-                        <li className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><a href="#home" className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>01</span><span className='font-thin tracking-widest'>DESTINATION</span></a></li>
-                        <li className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><a href="#home" className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>02</span><span className='font-thin tracking-widest'>CREW</span></a></li>
-                        <li className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><a href="#home" className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>03</span><span className='font-thin tracking-widest'>TECHNOLOGY</span></a></li>
+                        <li onClick={() => setToggleMenu(false)} className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><Link to={'/'} className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>00</span><span className='font-thin tracking-widest'>HOME</span></Link></li>
+                        <li onClick={() => setToggleMenu(false)} className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><Link to={'/destination'} className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>01</span><span className='font-thin tracking-widest'>DESTINATION</span></Link></li>
+                        <li onClick={() => setToggleMenu(false)} className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><Link to={'/crew'} className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>02</span><span className='font-thin tracking-widest'>CREW</span></Link></li>
+                        <li onClick={() => setToggleMenu(false)} className='w-1/4 max-[767px]:w-full h-full text-slate-50 flex justify-center items-center'><Link to={'/technology'} className='h-full max-[767px]:w-4/5 flex items-center text-xl cursor-pointer border-b-2 border-transparent focus:border-white'><span className='max-[767px]:block hidden xl:block pr-3 font-medium'>03</span><span className='font-thin tracking-widest'>TECHNOLOGY</span></Link></li>
                     </ul>
                 </nav>
             </div>
