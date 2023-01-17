@@ -1,11 +1,13 @@
 import './App.scss';
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header/Header';
-
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const currentPage = useLocation().pathname;
+  console.log(currentPage);
   return (
-    <div className="App w-full h-full">
+    <div className={`App w-full h-full ${currentPage === "/" ? "home" : currentPage === "/destination" ? "destination" : currentPage === "/crew" ? "crew" : "technology"}`}>
       <Header />
       <Outlet />
     </div>

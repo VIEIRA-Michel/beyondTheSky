@@ -24,7 +24,7 @@ const Destination = () => {
             <div className='w-full custom-height-90-d xl:h-3/4 flex flex-col xl:flex-row'>
                 <div className='w-full xl:w-3/5 xl:h-full flex flex-col justify-evenly items-center xl:items-start'>
                     <div className="flex w-3/5 xl:w-4/5 custom-height-90-xl justify-center">
-                        <img src={currentSelection === moon ? moonImage : currentSelection === mars ? marsImage : currentSelection === europa ? europaImage : titanImage} alt="" className='xl:w-auto custom-height-90-d' />
+                        <img src={currentSelection === moon ? moonImage : currentSelection === mars ? marsImage : currentSelection === europa ? europaImage : titanImage} alt="" className='xl:w-auto custom-height-90-d object-contain' />
                     </div>
                 </div>
                 <div className='max-[767px]:w-11/12 m-auto w-full h-3/5 md:h-2/4 xl:w-2/5 xl:h-full flex flex-col justify-between'>
@@ -58,7 +58,7 @@ const Destination = () => {
                     </div>
                 </div>
             </div>
-        </main >
+        </main>
     );
 }
 
