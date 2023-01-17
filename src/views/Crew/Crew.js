@@ -27,10 +27,10 @@ const Crew = () => {
                     </div>
                     <div className='custom-height-10 max-[413px]:flex max-[413px]:justify-center max-[413px]:items-center'>
                         <div className='flex flex-row justify-center xl:justify-start'>
-                            <div onClick={() => setCurrentSelection(douglas)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Douglas Hurley" ? "bg-white" : "bg-slate-600"} rounded-full mr-5`}></div>
-                            <div onClick={() => setCurrentSelection(mark)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Mark Shuttleworth" ? "bg-white" : "bg-slate-600"} rounded-full mr-5`}></div>
-                            <div onClick={() => setCurrentSelection(victor)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Victor Glover" ? "bg-white" : "bg-slate-600"} rounded-full mr-5`}></div>
-                            <div onClick={() => setCurrentSelection(anousheh)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Anousheh Ansari" ? "bg-white" : "bg-slate-600"} rounded-full`}></div>
+                            <div onClick={() => setCurrentSelection(douglas)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Douglas Hurley" ? "bg-white" : "bg-slate-600"} hover:bg-[#A6AAB5] transition-all rounded-full mr-5`}></div>
+                            <div onClick={() => setCurrentSelection(mark)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Mark Shuttleworth" ? "bg-white" : "bg-slate-600"} hover:bg-[#A6AAB5] transition-all rounded-full mr-5`}></div>
+                            <div onClick={() => setCurrentSelection(victor)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Victor Glover" ? "bg-white" : "bg-slate-600"} hover:bg-[#A6AAB5] transition-all rounded-full mr-5`}></div>
+                            <div onClick={() => setCurrentSelection(anousheh)} className={`w-3 h-3 cursor-pointer ${currentSelection.name === "Anousheh Ansari" ? "bg-white" : "bg-slate-600"} hover:bg-[#A6AAB5] transition-all rounded-full`}></div>
                         </div>
                     </div>
                 </div>

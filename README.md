@@ -2,7 +2,6 @@
 
 _Challenge proposed by Frontend mentor_
 
-> Currently in progress
 
 ## Installation
 
