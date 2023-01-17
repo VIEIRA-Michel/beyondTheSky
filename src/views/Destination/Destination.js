@@ -9,6 +9,7 @@ import { useState } from 'react';
 const Destination = () => {
     const [moon, mars, europa, titan] = data.destinations;
     const [currentSelection, setCurrentSelection] = useState(moon);
+
     return (
         <main className="w-full md:w-4/5 flex flex-col justify-evenly items-center m-auto">
             <div className="w-full custom-height-10-d flex flex-row w-full justify-center md:justify-start">
@@ -24,17 +25,17 @@ const Destination = () => {
             <div className='w-full custom-height-90-d xl:h-3/4 flex flex-col xl:flex-row'>
                 <div className='w-full xl:w-3/5 xl:h-full flex flex-col justify-evenly items-center xl:items-start'>
                     <div className="flex w-3/5 xl:w-4/5 custom-height-90-xl justify-center">
-                        <img src={currentSelection === moon ? moonImage : currentSelection === mars ? marsImage : currentSelection === europa ? europaImage : titanImage} alt="" className='xl:w-auto custom-height-90-d object-contain' />
+                        <img src={currentSelection === moon ? moonImage : currentSelection === mars ? marsImage : currentSelection === europa ? europaImage : titanImage} alt="" className={`xl:w-auto custom-height-90-d object-contain appear`} />
                     </div>
                 </div>
                 <div className='max-[767px]:w-11/12 m-auto w-full h-3/5 md:h-2/4 xl:w-2/5 xl:h-full flex flex-col justify-between'>
                     <div className='w-full max-[413px]:mb-7 md:w-4/5 md:mx-auto xl:w-full xl:mx-0'>
                         <nav className='w-full'>
                             <ul className='flex flex-row w-full justify-around xl:justify-start'>
-                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(moon)} className={`cursor-pointer pb-2.5  border-b-2 border-transparent ${currentSelection.name === "Moon" ? "border-white" : ""}`}>MOON</a></li>
-                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(mars)} className={`cursor-pointer pb-2.5  border-b-2 border-transparent ${currentSelection.name === "Mars" ? "border-white" : ""}`}>MARS</a></li>
-                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(europa)} className={`cursor-pointer pb-2.5  border-b-2 border-transparent ${currentSelection.name === "Europa" ? "border-white" : ""}`}>EUROPA</a></li>
-                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(titan)} className={`cursor-pointer pb-2.5  border-b-2 border-transparent ${currentSelection.name === "Titan" ? "border-white" : ""}`}>TITAN</a></li>
+                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(moon)} className={`cursor-pointer pb-2.5  border-b-2 ${currentSelection.name === "Moon" ? "border-white" : "border-transparent"}`}>MOON</a></li>
+                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(mars)} className={`cursor-pointer pb-2.5  border-b-2 ${currentSelection.name === "Mars" ? "border-white" : "border-transparent"}`}>MARS</a></li>
+                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(europa)} className={`cursor-pointer pb-2.5  border-b-2 ${currentSelection.name === "Europa" ? "border-white" : "border-transparent"}`}>EUROPA</a></li>
+                                <li className='text-white font-thin text-xl tracking-widest xl:mr-8'><a href="#Destination" onClick={() => setCurrentSelection(titan)} className={`cursor-pointer pb-2.5  border-b-2 ${currentSelection.name === "Titan" ? "border-white" : "border-transparent"}`}>TITAN</a></li>
                             </ul>
                         </nav>
                     </div>
