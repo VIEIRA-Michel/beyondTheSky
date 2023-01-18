@@ -2,12 +2,6 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 
     .App {
-        background-color: black;
-        min-height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
 
         &.home {
             @media (max-width:767px) {
@@ -89,147 +83,29 @@ body {
             }
         }
 
-        header {
-            height: 13.7vh;
-
-
-            .backgroundNavbar {
-                background-color: rgba(122, 122, 122, 0.1);
-                backdrop-filter: blur(10px);
-            }
-
-            .custom-w-h-close-burgerMenu {
-                @media (max-width: 767px) {
-                    height: 10vh;
-                    width: 90%;
-                }
-            }
-        }
-
-        main {
-            height: 86.3vh;
-        }
-
-        @media (max-width: 768px) {
-
-            header {
-                height: 10vh;
-            }
-
-            main {
-                height: 90vh;
-            }
-        }
-
         main {
 
-            .space {
-                font-family: 'Bellefair';
-            }
-
-            .technology-picture {
-                // background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-
-                &.launchPicture {
-                    background-image: url("./assets/technology/image-launch-vehicle-landscape.jpg");
-
-                    @media (min-width: 1280px) {
-                        background-image: url("./assets/technology/image-launch-vehicle-portrait.jpg");
-                    }
-                }
-
-                &.spaceportPicture {
-                    background-image: url("./assets/technology/image-spaceport-landscape.jpg");
-
-                    @media (min-width: 1280px) {
-                        background-image: url("./assets/technology/image-spaceport-portrait.jpg");
-                    }
-                }
-
-                &.spacePicture {
-                    background-image: url("./assets/technology/image-space-capsule-landscape.jpg");
-
-                    @media (min-width: 1280px) {
-                        background-image: url("./assets/technology/image-space-capsule-portrait.jpg");
-                    }
-                }
-            }
-
-
-
-            .custom-width {
-                width: 55%;
-            }
-
-            .custom-width {
-                width: 100%;
-
-                @media (min-width:768px) {
-                    width: 53%;
-                }
+            .launchPicture {
+                background-image: url("./assets/technology/image-launch-vehicle-landscape.jpg");
 
                 @media (min-width: 1280px) {
-                    width: 95%;
+                    background-image: url("./assets/technology/image-launch-vehicle-portrait.jpg");
                 }
             }
 
-            .custom-height-10 {
-                @media (max-width: 413px) {
-                    height: 10%;
-                }
-            }
-
-            .custom-height-10-d {
-                @media (max-width: 1279px) {
-                    height: 10%;
-                }
-            }
-
-            .custom-height-90-d {
-                @media (max-width: 1279px) {
-                    height: 90%;
-                }
-            }
-
-            .custom-height-90-xl {
-                @media (min-width: 1280px) {
-                    height: 90%;
-                }
-            }
-
-            .custom-height-90 {
-                @media (max-width: 413px) {
-                    height: 90%;
-                }
-
-                @media (min-width: 414px) {
-                    height: 60%;
-                }
+            .spaceportPicture {
+                background-image: url("./assets/technology/image-spaceport-landscape.jpg");
 
                 @media (min-width: 1280px) {
-                    height: 50%;
+                    background-image: url("./assets/technology/image-spaceport-portrait.jpg");
                 }
             }
 
-            .custom-height-90 {
-                // @media ()
-            }
+            .spacePicture {
+                background-image: url("./assets/technology/image-space-capsule-landscape.jpg");
 
-            .custom-height-title {
-
-                // 413px origin value
-                @media (max-width: 767px) {
-                    height: 10%;
-                }
-            }
-
-            .custom-height-content {
-                @media (max-width: 767px) {
-                    height: 90%;
+                @media (min-width: 1280px) {
+                    background-image: url("./assets/technology/image-space-capsule-portrait.jpg");
                 }
             }
         }

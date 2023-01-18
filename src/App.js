@@ -5,9 +5,8 @@ import { useLocation } from 'react-router-dom';
 
 function App() {
   const currentPage = useLocation().pathname;
-  console.log(currentPage);
   return (
-    <div className={`App w-full h-full ${currentPage === "/" ? "home" : currentPage === "/destination" ? "destination" : currentPage === "/crew" ? "crew" : "technology"}`}>
+    <div className={`App w-full h-full bg-black bg-cover bg-fixed bg-no-repeat ${currentPage === "/" ? "home" : currentPage === "/destination" ? "destination" : currentPage === "/crew" ? "crew" : "technology"}`}>
       <Header />
       <Outlet />
     </div>
