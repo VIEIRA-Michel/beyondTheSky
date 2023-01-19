@@ -28,7 +28,7 @@ const Destination = () => {
                         <img src={currentSelection === moon ? moonImage : currentSelection === mars ? marsImage : currentSelection === europa ? europaImage : titanImage} alt="" className={`xl:w-auto max-[1279px]:h-90of100 object-contain appear`} />
                     </div>
                 </div>
-                <div className='max-[767px]:w-11/12 m-auto w-full h-3/5 md:h-2/4 xl:w-2/5 xl:h-full flex flex-col justify-between'>
+                <div className='max-[767px]:w-11/12 m-auto w-full h-3/5 md:h-2/4 xl:w-2/5 xl:h-full flex flex-col justify-between xl:justify-around'>
                     <div className='w-full max-[413px]:mb-7 md:w-4/5 md:mx-auto xl:w-full xl:mx-0'>
                         <nav className='w-full'>
                             <ul className='flex flex-row w-full justify-around xl:justify-start'>
